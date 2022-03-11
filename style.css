@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--soft_blue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--main-dark-blue: hsl(217, 54%, 11%);
+	--card-dark-blue: hsl(216, 50%, 16%);
+	--line-dark-blue: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+}
+body {
+	font-family: 'Outfit', sans-serif;
+	background: var(--main-dark-blue);
+	color: var(--white);
+}
+.container{
+    min-height: 100vh;
+}
+.card {
+	background: var(--card-dark-blue);
+	width: 90%;
+	margin: auto;
+	padding: 1.5rem;
+	border-radius: 15px;
+}
+.equilbriam-img {
+	width: 100%;
+	border-radius: 15px;
+	margin-bottom: 1rem;
+}
+.infomation {
+	/* padding: 1rem; */
+	width: 100%;
+	/* background: var(--cyan); */
+}
+.product_name {
+	font-size: 1.2rem;
+	margin-bottom: 0.7rem;
+}
+.product_description {
+	font-size: 1rem;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+.product_aval{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price svg{
+    margin-right: .2rem;
+}
+.time svg{
+    margin-left: .2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    margin-top: 2rem;
+    /* background: var(--cyan); */
+    display: flex;
+    padding: .5rem;
+    /* justify-content: center; */
+    align-items: center;
+    border-top: 1px solid var(--line-dark-blue);
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+.profile img{
+    max-width: 15%;
+    border: 1px solid var(--white);
+    border-radius: 25px;
+    margin-right: 1rem;
+}
+.profile .name{
+    align-items: flex-end;
+}
+@media(min-width:480px){
+    .card{
+        width: 400px;
+        height: 590px;
+        /* margin: auto; */
+        margin-top: 3rem;
+    }
+    .equilbriam-img{
+        width: 350px;
+        height: 300px;
+    }
+    .profile{
+        padding-top: 0.5rem;
+        /* padding-bottom: .5rem; */
+    }
+}
